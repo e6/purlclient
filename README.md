@@ -6,10 +6,10 @@ OCLCs service at purl.org (and any other install of the PURLZ software).
 
 purlclient will try to read a configuration file at ~/.purlrc in the following format: 
 
- [purl]
- uid=username
- password=password 
- location=purl server url 
+    [purl]
+    uid=username
+    password=password 
+    location=purl server url 
 
 At this time, only the resource /admin/purl is covered by this client. This means that you cannot create users
 or groups from the client software. Adding such functionality should be trivial and will be done upon request. 
