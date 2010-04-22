@@ -58,18 +58,18 @@ class PURL(object):
             print req.headers
             self.url_response = urllib2.urlopen(req)
         except urllib2.HTTPError, inst:
-            print "purl: Received HTTP error code from PURL."
-            print "purl: location: %s" % location
-            print "purl: response code: %s" % inst.fp.code
-            print "purl: response: %s" % inst.fp.read()
-            print "purl: request data: %s" % data
+            #print "purl: Received HTTP error code from PURL."
+            #print "purl: location: %s" % location
+            #print "purl: response code: %s" % inst.fp.code
+            #print "purl: response: %s" % inst.fp.read()
+            #print "purl: request data: %s" % data
             self.last_http_error = inst
             self.last_status = inst.code
         except urllib2.URLError, inst:
             self.last_url_error = inst
             self.last_status,self.last_body = inst.reason
         else:
-            print "purl: OK opening PURL: %s" % location
+            #print "purl: OK opening PURL: %s" % location
             self.last_status = self.url_response.code
             self.last_body = self.url_response.read()
             self.last_headers = self.url_response.headers

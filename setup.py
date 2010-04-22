@@ -15,7 +15,7 @@ setup(
     author='Friedrich Lindenberg',
     author_email='friedrich@pudo.org',
     license=__license__,
-    url='http://github.org/pudo/purlclient',
+    url='http://github.com/pudo/purlclient',
     description=__description__,
     keywords='purl url redirect persistence sustainability tool client',
     long_description =__long_description__,
